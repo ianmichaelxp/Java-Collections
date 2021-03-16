@@ -31,7 +31,7 @@ public class Aluno { //implements Comparable<Aluno>{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "\nNome: " + this.nome + " | Idade: " + this.idade;
+		return "\nNome do aluno: " + this.nome + " | Idade: " + this.idade;
 	}
 
 	/**
