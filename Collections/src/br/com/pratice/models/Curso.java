@@ -25,9 +25,6 @@ public class Curso {
 		this.cargaHoraria = cargaHoraria;
 		this.alunos = alunos;
 	}
-	
-	
-
 
 	public Curso(String nome, int cargaHoraria, List<Aluno> alunos, Set<Professor> professores) {
 		super();
@@ -73,6 +70,17 @@ public class Curso {
 	public String toString() {
 		return "Curso: " + this.nome + " | Carga Horária: " + this.cargaHoraria + " | " + this.alunos + " | " + this.professores;
 	}
+	
+	
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
+	}
+	
+	public boolean estaRegistrado(Professor profesor) {
+		return this.professores.contains(profesor);
+	}
+	
+	
 	
 	
 	

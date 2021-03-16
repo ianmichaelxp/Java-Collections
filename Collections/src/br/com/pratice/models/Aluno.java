@@ -33,7 +33,16 @@ public class Aluno { //implements Comparable<Aluno>{
 		// TODO Auto-generated method stub
 		return "\nNome do aluno: " + this.nome + " | Idade: " + this.idade;
 	}
-
+	
+	@Override
+	public boolean equals(Object obj) {
+		Aluno aluno = (Aluno) obj;
+		if(this.nome == aluno.getNome() && this.idade == aluno.getIdade()) {
+			return true;
+		}
+		return false;
+	}
+	
 	/**
 
 	@Override

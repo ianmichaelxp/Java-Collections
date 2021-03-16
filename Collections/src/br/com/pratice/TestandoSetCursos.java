@@ -32,12 +32,30 @@ public class TestandoSetCursos {
 		
 		//System.out.println(curso2);
 		
-		curso.adicionar(new Professor("Maria", 1001));
-		curso.adicionar(new Professor("João", 1002));
-		curso.adicionar(professorSubst);
-		curso.adicionar(professorSubst);
+		
+		Professor prof1 = new Professor("Maria", 1001);
+		Professor prof2 = new Professor("João", 1002);
+		Professor profSubst = new Professor("João", 1002);
+		
+		Aluno novato1 = new Aluno("Leonardo", 17);
+		//Aluno novato2 = new Aluno("Leonardo", 17);
+		
+		curso.adicionar(prof1);
+		curso.adicionar(prof2);
+		curso.adicionar(novato1);
+		//curso.adicionar(novato2);
 		
 		System.out.println(curso);
+		
+		System.out.println(curso.estaRegistrado(profSubst));
+		
+		System.out.println(prof2.equals(profSubst));
+		
+		
+		
+
+		
+
 
 		
 		
